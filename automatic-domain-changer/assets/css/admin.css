@@ -1,0 +1,32 @@
+.adc-wrap .form-table th { width: 220px; }
+
+.adc-protocol-prefix {
+	display: inline-block;
+	padding-right: 4px;
+	color: #50575e;
+}
+
+.adc-domain-input { max-width: 100%; width: 280px; }
+
+.adc-select { vertical-align: middle; margin-right: 6px; }
+
+.adc-backup-actions { margin-top: 12px; }
+
+.adc-error {
+	color: #b32d2e;
+	font-weight: 600;
+}
+
+.adc-hidden { display: none; }
+
+.adc-progress .adc-log {
+	background: #1d2327;
+	color: #f0f0f1;
+	padding: 12px 16px;
+	border-radius: 4px;
+	max-height: 60vh;
+	overflow: auto;
+	white-space: pre-wrap;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 12px;
+}

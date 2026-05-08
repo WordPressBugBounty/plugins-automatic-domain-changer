@@ -1,0 +1,39 @@
+{
+    "name": "nuagelab/automatic-domain-changer",
+    "description": "Automatically detects a WordPress domain change and rewrites old → new across the database.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "homepage": "http://www.nuagelab.com/wordpress-plugins/auto-domain-change",
+    "authors": [
+        {
+            "name": "NuageLab",
+            "email": "wordpress-plugins@nuagelab.com",
+            "homepage": "http://www.nuagelab.com/wordpress-plugins"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.0 || ^2.0"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NuageLab\\AutoDomainChanger\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "phpcs --standard=phpcs.xml.dist",
+        "lint:fix": "phpcbf --standard=phpcs.xml.dist"
+    }
+}
